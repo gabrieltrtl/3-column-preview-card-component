@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  width: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  color: #FFF;
+  background: #F2F2F2;
+  
+}
+
+main {
+  max-width: 20.4375rem;
+  margin: 5.5rem auto;
+}
+
+main:nth-child(odd) {
+  border-radius: 8px;
+}
+
+img {
+  max-width: 4rem;
+  margin-bottom: 2.1875rem;
+}
+
+p {
+  margin-bottom: 1.5625rem;
+  opacity: 0.75;
+  line-height: 1.6;
+}
+
+a {
+  background-color: #FFF;
+  display: inline-block;
+  padding: 0.75rem 1.9688rem;
+  border-radius: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5;  
+}
+
+.sedans a {
+  color:#E28625;
+}
+
+.suvs a {
+  color: #006971;
+}
+
+.luxury a {
+  color: #004140;
+}
+.container {
+  padding: 3rem 2.4688rem 3rem 3.0625rem;
+}
+
+main h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  margin-bottom: 1.5625rem;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+
+.sedans {
+  background: #E28625;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.suvs {
+  background: #006971;
+}
+
+.luxury {
+  background: #004140;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+
+@media (min-width: 1000px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    margin: initial;
+    display: flex;
+    max-width: 920px;
+  }
+
+  a:hover {
+    background: inherit;
+    border: 1px solid #FFF;
+    color: #FFF;
+  }
+
+  .sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
+
+  p {
+    margin-bottom: 5.1875rem;
+  }
+}
